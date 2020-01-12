@@ -1,0 +1,5 @@
+FROM node:12.14.1-alpine3.11
+
+RUN npm install -g jira-cli
+
+ENTRYPOINT jira config && sh 
